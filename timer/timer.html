@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>タイマーx席替え</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">カウントダウンタイマー<br>ランダム席替え</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">説明</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../timer/timer.html">タイマー</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../sekigae/sekigae.html">席替え</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://github.com/StopInternet/Timer-Seats_Change">Github</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <div class="dentaku-form" align="center" id="timera">
+                <br>
+                <h2>計測タイマー</h2><br>
+                <canvas id="canvas" width="800" height="400" style="background-color: #8f9fc;">
+                </canvas><br>
+                <h3>時間設定</h3>
+                開始<input type="text"  id="min" value="0" maxlength="3">分  <input type="text" id="sec" value="0" maxlength="2">秒 <br>
+                <h3>アラート設定</h3>
+                残り<input type="text" id="min_1" value="0" maxlength="3">分 <input type="text" id="sec_1" value="0" maxlength="2">秒<br>
+                残り<input type="text" id="min_2" value="0" maxlength="3">分 <input type="text" id="sec_2" value="0" maxlength="2">秒<br>
+                残り<input type="text" id="min_3" value="0" maxlength="3">分 <input type="text" id="sec_3" value="0" maxlength="2">秒
+                <br><br>
+                <input class="btn btn-dentaku1" type="button" id="button" value="計測開始" onclick="setTime()">
+                <input class="btn btn-dentaku2" type="button" id="button" value="停止" onclick="stop()"><br><br>
+            </div>
+            <div id="descri">
+            </div>
+            <script src="../js/timer.js"></script>    
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="../js/seats_change.js"></script>
+    </body>
+</html>
